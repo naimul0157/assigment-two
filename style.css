@@ -309,13 +309,15 @@ background: linear-gradient(
         grid-template-columns: repeat(2, 1fr);
     }
     .third_second_box button{
-        padding: 0px;
-        width: 50%;
+        display: none;
         /* right: -15%; */
         /* padding: 2%; */
     }
     .third_second_box h2{
         font-size: 0.8rem;
         text-align: center;
+    }
+    .third_section_box img{
+        width: 100%;
     }
 }
