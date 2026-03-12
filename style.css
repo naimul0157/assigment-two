@@ -60,6 +60,7 @@ background: linear-gradient(
 .empowering{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10%;
 }
 .empowering img{
     width: 100%;
@@ -93,6 +94,7 @@ background: linear-gradient(
 /* this is the design of the second section */
 .second{
     background: url("/assets/bg.png");
+    margin-bottom: 5%;
 }
 .second_header{
     text-align: center;
