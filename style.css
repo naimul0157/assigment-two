@@ -81,6 +81,47 @@ body{
     justify-content: space-between;
     align-items: flex-start;
 }
+/* this is the design of the second section */
+.second_header{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.second_box_design{
+    display: flex;
+    text-align: center;
+    width: 30% 30% 30%;
+    gap: 5%;
+    
+}
+.box{
+    border-radius: 10px;
+    padding: 10px 30px;
+    
+}
+#first_box{
+    background: linear-gradient(
+    to bottom,
+    rgba(222, 245, 255, 1),
+    rgba(222, 245, 255, 0.5),
+    rgba(222, 245, 255, 0)
+);
+}
+#second_box{
+ background: linear-gradient(
+    to bottom,
+    rgba(255, 244, 220, 1),
+    rgba(255, 244, 220, 0.6),
+    rgba(255, 244, 220, 0)
+);
+}
+#third_box{
+   background: linear-gradient(
+  to bottom,
+  rgba(238, 225, 255, 1),
+  rgba(238, 225, 255, 0.6),
+  rgba(255, 255, 255, 0)
+);
+}
 /* media query for small devices */
 @media screen and (max-width: 800px) {
     .header_link{
@@ -136,5 +177,21 @@ body{
        display: flex;
        justify-content: center;
        align-items: center;
+    }
+    .second_header h1{
+        font-size: 1.5rem;
+    }
+    .second_box_design{
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .box{
+        margin-bottom: 5%;
+    }
+    .box h2{
+        font-size: 1.5rem;
+    }
+    .box p{
+        font-size: 0.8rem;
     }
 }
