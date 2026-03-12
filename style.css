@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ+Basic:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    font-family: "Iosevka Charon", monospace;
+background: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 1),
+  rgba(255, 255, 255, 0)
+);
 }
 .hide{
     display: none;
@@ -8,20 +12,26 @@ body{
 .container{
     width: 80%;
     margin: auto;
-    margin-bottom: 3%;
 }
 .school{
     display: flex;
+    width: 10%;
+}
+.school h2{
+    font-size: 32px;
+    font-weight: 600;
 }
 .header{
     display: flex;
     justify-content: space-between;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
 }
 .header_link{
     display: flex;
-    width: 30%;
-    font-size: 1.2rem;
-    justify-content: space-between;
+    width: 50%;
+    font-size: 1.5rem;
+    justify-content: space-around;
     align-items: center;
 }
 .header_link a{
@@ -31,9 +41,8 @@ body{
 }
 .header_button{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-
 }
 .header_button button{
     font-size: 1.2rem;
@@ -82,6 +91,9 @@ body{
     align-items: flex-start;
 }
 /* this is the design of the second section */
+.second{
+    background: url("/assets/bg.png");
+}
 .second_header{
     text-align: center;
     margin-bottom: 5%;
@@ -114,6 +126,15 @@ body{
     rgba(255, 244, 220, 0)
 );
 }
+.third{
+background-image: url("/assets/bg.png");
+background: linear-gradient(
+  to top,
+  rgba(254, 161, 1, 0.425),
+  rgba(254, 161, 1, 0.26),
+  rgba(254, 163, 1, 0)
+);
+}
 #third_box{
    background: linear-gradient(
   to bottom,
@@ -122,6 +143,90 @@ body{
   rgba(255, 255, 255, 0)
 );
 }
+.third_section_box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+.third_section_header{
+    text-align: center;
+}
+#third_first_box{
+    grid-row: span 2;
+    background-color: white;
+}
+#third_first_box button{
+    border: none;
+    font-size: 1.5rem;
+    background-color: #3CD8E8;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    top: -5%;
+    right: -8%;
+    padding: 2%;
+}
+.third_box{
+    border-radius: 10px;
+}
+.third_box img{
+    border-radius: 10px;
+    height: 50%;
+}
+.third_box h2{
+    font-size: 2.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.third_box p{
+    font-size: 1.2rem;
+    color: gray;
+    padding: 5%;
+}
+.third_second_box button{
+    border: none;
+    font-size: 1.2rem;
+    background-color: skyblue;
+    border-radius: 10px;
+    position: relative;
+    top: -7%;
+    right: -8%;
+    padding: 2%;
+}
+.third_second_box{
+    background-color: white;
+    border-radius: 10px;
+}
+.third_second_box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.third_second_box h2{
+    font-size: 1.3rem;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.third_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    /* margin-bottom: 5%; */
+}
+.third_button button{
+    padding: 1% 5%;
+    margin-bottom: 5%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.footer{
+    background-color: #01ACFD;
+    
+}
 /* media query for small devices */
 @media screen and (max-width: 800px) {
     .header_link{
@@ -129,6 +234,7 @@ body{
     }
     .header_button{
         display: none;
+        
     }
     .school h2{
         display: none;
@@ -193,5 +299,20 @@ body{
     }
     .box p{
         font-size: 0.8rem;
+    }
+    #third_first_box{
+        display: none;
+    }
+    .third_section_box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .third_second_box button{
+        padding: 0px;
+        right: -15%;
+        padding: 2%;
+    }
+    .third_second_box h2{
+        font-size: 1rem;
+        text-align: center;
     }
 }
