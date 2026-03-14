@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ+Basic:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 body{
+
 background: linear-gradient(
   to bottom,
   rgba(255, 255, 255, 1),
@@ -105,7 +106,7 @@ background: linear-gradient(
     text-align: center;
     width: 30% 30% 30%;
     gap: 5%;
-    
+    justify-content: space-between;
 }
 .box{
     border-radius: 10px;
@@ -129,13 +130,14 @@ background: linear-gradient(
 );
 }
 .third{
-background-image: url("/assets/bg.png");
-background: linear-gradient(
+background: 
+linear-gradient(
   to top,
   rgba(254, 161, 1, 0.425),
   rgba(254, 161, 1, 0.26),
   rgba(254, 163, 1, 0)
-);
+),
+url("/assets/bg.png");
 }
 #third_box{
    background: linear-gradient(
@@ -227,7 +229,37 @@ background: linear-gradient(
 }
 .footer{
     background-color: #01ACFD;
+    padding: 0 10%;
     
+}
+.footer_design_box{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 5% 0px;
+    justify-content: space-between;
+}
+.footer_box_2_link{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-between;
+}
+
+.footer_box_2_link a{
+    text-decoration: none;
+    color: white;
+    
+}
+.kids_education{
+    display: flex;
+}
+.footer_box_1{
+    width: 40%;
+}
+.box_3_logo a{
+    text-decoration: none;
+    font-size: 120%;
 }
 /* media query for small devices */
 @media screen and (max-width: 800px) {
@@ -320,4 +352,12 @@ background: linear-gradient(
     .third_section_box img{
         width: 100%;
     }
+    .footer_design_box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer_box_1{
+        width: 100%;
+    }
+
 }
