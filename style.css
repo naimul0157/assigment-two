@@ -363,5 +363,8 @@ url("/assets/bg.png");
     .footer_box_1{
         width: 100%;
     }
+    .footer_box_1 img{
+        width: 20%;
+    }
 
 }
