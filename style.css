@@ -263,6 +263,10 @@ url("/assets/bg.png");
 }
 /* media query for small devices */
 @media screen and (max-width: 800px) {
+    body{
+        width: 100%;
+        margin: auto;
+    }
     .header_link{
         display: none;
     }
